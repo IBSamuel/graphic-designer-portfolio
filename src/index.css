@@ -1,0 +1,19 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.nameFontSize{
+  font-size: 60px;
+  font-weight:900;
+}
+.fontHight{
+  line-height: 40px;
+}
+.bi-github:hover{
+  color: #202931;
+}
+.bi-linkedin:hover{
+  color: #0077b7;
+}
+.bi-whatsapp:hover{
+  color: #058127;
+}

@@ -1,3 +1,4 @@
+*
 .linksAnimation {
     position: relative;
     text-decoration: none;
@@ -17,4 +18,39 @@
   .linksAnimation:hover:after {
     width: 100%;
   }
+  .hireMeAnimation:hover{
+    /* color */
+  }
+  .hireMeAnimation {
+    background: transparent;
+    color: #000;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  .hireMeAnimation::before {
+    content: "";
+    position: absolute;
+    color: white;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .hireMeAnimation:hover::before {
+    color: white;
+    left: 0;
+  }
+  
+  .hireMeAnimation:hover {
+    color: #fff;
+  }
+  
+
   

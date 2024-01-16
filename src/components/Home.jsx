@@ -1,15 +1,16 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Section from './Section'
 import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
-import Aboutme from './Aboutme'
 
-const Section = () => {
+const Home = () => {
   return (
     <>
-        <SectionOne/>
-        <SectionTwo/>
+    <SectionTwo/>
+    
     </>
   )
 }
 
-export default Section
+export default Home

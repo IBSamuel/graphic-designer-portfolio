@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -16,16 +17,16 @@ const Navbar = () => {
                         <span className="navbar-text">
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active fw-semibold ms-5 linksAnimation" aria-current="page" href="#">Work</a>
+                                <Link className="nav-link active fw-semibold ms-5 linksAnimation" aria-current="page" to="/">Work</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link fw-semibold ms-5 linksAnimation" href="#">About Me</a>
+                                <Link className="nav-link fw-semibold ms-5 linksAnimation" to="/aboutme">About Me</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link fw-semibold ms-5 linksAnimation" href="#">View Resume</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link fw-semibold ms-5 linksAnimation" href="#">Contact</a>
+                                <Link className="nav-link fw-semibold ms-5 linksAnimation" to="/contact" href="#">Contact</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link hireMeAnimation rounded ps-5 pe-5 rounded-5 border-2 border border-dark" href="#"><span>Hire Me</span></a>

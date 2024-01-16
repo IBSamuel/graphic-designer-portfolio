@@ -1,9 +1,12 @@
-import React from 'react'
+// index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
 
-const testOneTwo = () => {
-  return (
-    <div>testOneTwo</div>
-  )
-}
-
-export default testOneTwo
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);
